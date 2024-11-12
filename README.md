@@ -1,8 +1,8 @@
 # Image Gallery
 
 # TODO
-- [ ] Make it Deploy
-- [ ] Scaffold basic UI with mock data
+- [x] Make it Deploy
+- [x] Scaffold basic UI with mock data
 - [ ] Actually set up the database (vercel postgres)
 - [ ] Attack database to UI
 - [ ] Add authentication (w/ Clerk)
