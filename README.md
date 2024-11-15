@@ -14,6 +14,16 @@
 - [x] Routing/image page (parallel route)
 - [x] Set up Toaster wit Shancn/ui 
 - [ ] Delete button (w/ Server Action )
-- [ ] Analytics (w/ Posthog)
+- [x] Analytics (w/ Posthog)
 - [ ] Ratelimiting (w/ Upstash)
 
+
+Future Features:
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+- [ ]
