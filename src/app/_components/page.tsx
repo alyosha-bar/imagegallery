@@ -1,6 +1,7 @@
 "use client"
 
 import { SignedIn, SignedOut, SignInButton, UserButton } from "@clerk/nextjs"
+import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { UploadButton } from "~/utils/uploadthing";
 
@@ -10,8 +11,8 @@ function TopNav() {
     const router = useRouter();
 
     return (
-      <nav className="flex w-full item-center justify-between p-4 text-xl font-semibold border-b">
-        <div> Gallery </div>
+      <nav className="flex w-full items-center justify-between p-4 text-xl font-semibold border-b h-24">
+        <Link href="/" className="text-3xl p-4"> Gallery </Link>
         <div>
             <SignedOut>
                 <SignInButton></SignInButton>
