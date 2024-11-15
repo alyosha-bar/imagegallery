@@ -12,7 +12,7 @@
 - [x] Use Next Image Component
 - [x] Error management (w/ Sentry)
 - [x] Routing/image page (parallel route)
-- [ ] Set up Toaster wit Shancn/ui 
+- [x] Set up Toaster wit Shancn/ui 
 - [ ] Delete button (w/ Server Action )
 - [ ] Analytics (w/ Posthog)
 - [ ] Ratelimiting (w/ Upstash)
