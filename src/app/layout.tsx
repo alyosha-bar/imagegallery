@@ -11,6 +11,7 @@ import { type Metadata } from "next";
 import { ClerkProvider } from "@clerk/nextjs";
 import TopNav from "./_components/page";
 import React from "react";
+import { Toaster } from "sonner";
 
 export const metadata: Metadata = {
   title: "Image Gallery",
@@ -46,6 +47,7 @@ export default function RootLayout({
           </div>
           {modal}
           <div id="modal-root"></div>
+          <Toaster />
         </body>
       </html>
     </ClerkProvider>
