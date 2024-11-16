@@ -3,6 +3,7 @@ import { createUploadthing, type FileRouter } from "uploadthing/next";
 import { UploadThingError } from "uploadthing/server";
 import { db } from "~/server/db";
 import { images } from "~/server/db/schema";
+import { ratelimit } from "~/server/ratelimit";
 
 const f = createUploadthing();
 
@@ -12,16 +13,15 @@ const f = createUploadthing();
 export const ourFileRouter = {
   // Define as many FileRoutes as you like, each with a unique routeSlug
   imageUploader: f({ image: { maxFileSize: "4MB", maxFileCount: 40 } })
-    // Set permissions and file types for this FileRoute
     .middleware(async ({ req }) => {
-      // This code runs on your server before upload
-      //   const user = await auth(req);
-        const user = await getAuth(req)
-
-      // If you throw, the user will not be able to upload
+      // auth
+      const user = await getAuth(req)
       if (!user) throw new UploadThingError("Unauthorized");
 
-      // Whatever is returned here is accessible in onUploadComplete as `metadata`
+      // rate limiting
+      const { success } = await ratelimit.limit(user.userId as string)
+      if (!success) throw new UploadThingError("Ratelimited.")
+
       return { userId: user.userId };
     })
     .onUploadComplete(async ({ metadata, file }) => {
