@@ -19,11 +19,8 @@
 
 
 Future Features:
-- [ ]
-- [ ]
-- [ ]
-- [ ]
-- [ ]
-- [ ]
-- [ ]
-- [ ]
+- [ ] "Selecting" multiple images on the gallery page and performing an action on all
+- [ ] "Pagination" / "Infinite Scroll"
+- [ ] Grouping ( Folders / Albums )
+- [ ] Video Streaming
+- [ ] Narrow Down purpose for the project
