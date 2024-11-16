@@ -15,7 +15,7 @@
 - [x] Set up Toaster wit Shancn/ui 
 - [x] Delete button (w/ Server Action )
 - [x] Analytics (w/ Posthog)
-- [ ] Ratelimiting (w/ Upstash)
+- [x] Ratelimiting (w/ Upstash)
 
 
 Future Features:
