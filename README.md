@@ -13,7 +13,7 @@
 - [x] Error management (w/ Sentry)
 - [x] Routing/image page (parallel route)
 - [x] Set up Toaster wit Shancn/ui 
-- [ ] Delete button (w/ Server Action )
+- [x] Delete button (w/ Server Action )
 - [x] Analytics (w/ Posthog)
 - [ ] Ratelimiting (w/ Upstash)
 
